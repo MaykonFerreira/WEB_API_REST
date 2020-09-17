@@ -15,8 +15,7 @@ import com.maykon.apirest.repositories.MarcaRepository;
 import com.maykon.apirest.repositories.PatrimonioRepository;
 import com.maykon.apirest.repositories.UsuarioRepository;
 
-//@Service
-@Service("userDetailsService")
+@Service
 public class DBService {
 
 	//@Autowired
@@ -28,8 +27,8 @@ public class DBService {
 	@Autowired
 	private PatrimonioRepository patrimonioRepository ;	
 	
-	@Autowired
-	private UsuarioRepository usuarioRepository;
+	//@Autowired
+	//private UsuarioRepository usuarioRepository;
 	
 
 	

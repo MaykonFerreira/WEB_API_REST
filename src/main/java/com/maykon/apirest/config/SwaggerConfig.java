@@ -49,7 +49,8 @@ public class SwaggerConfig {
 				.globalResponseMessage(RequestMethod.DELETE, Arrays.asList(m204del, m403, m404, m500))
 				
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.maykon.cursomc.resources"))
+				// Mostrar apenas os endpoints do caminho 
+				.apis(RequestHandlerSelectors.basePackage("com.maykon.apirest.resources"))
 				// .apis(RequestHandlerSelectors.any())
 				.paths(PathSelectors.any())
 				.build()
